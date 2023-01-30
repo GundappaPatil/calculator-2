@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator(JS)</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="casio">CASIO</div>
+        <div class="input">
+            <input type="text" id="value"  placeholder="0">
+        </div>
+        <div class="gridItems">
+            <button id="item1" class="item" onclick="backSpace()"><img src="BS.jpg" alt="img"></button>
+            <button class="item" id="clear1" value="CE" onclick="del()">CE</button>
+            <button class="item" id="clear2" value="C" onclick="del()">C</button>
+            <button class="item" value = "&radic;" onclick="root()">&radic;</button>
+            <button class="item"  onclick="handleClick(7)">7</button>
+            <button class="item" onclick="handleClick(8)">8</button>
+            <button class="item" onclick="handleClick(9)">9</button>
+            <button class="item" value="&divide;" onclick="handleClick('/')">&divide;</button>
+            <button class="item" onclick="handleClick(4)">4</button>
+            <button class="item" onclick="handleClick(5)">5</button>
+            <button class="item" onclick="handleClick(6)">6</button>
+            <button class="item" value="&times;" onclick="handleClick('*')">&times;</button>
+            <button class="item" onclick="handleClick(3)">3</button>
+            <button class="item" onclick="handleClick(2)">2</button>
+            <button class="item" onclick="handleClick(1)">1</button>
+            <button class="item" value="-" onclick="handleClick('-')">-</button>
+            <button class="item" onclick="handleClick(0)">0</button>
+            <button class="item" onclick="handleClick('.')">.</button>
+            <button class="item" onclick="handleEval()">=</button>
+            <button class="item" value="+" onclick="handleClick('+')">+</button>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
